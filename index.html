@@ -9,6 +9,15 @@
 	</head>
 	<body class="is-preload">
 
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
@@ -41,94 +50,149 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-			
-									<h2><a href="#">Simple Shell</a></h2>
-									<p>This C program recreates a standard shell that implements linux commands. This shell also has the same functionality of a standard shell such as piping and output redirection. This project involved 
-										 delving deep into the core principles of operating systems, including process management, file system operations, and inter-process communication.</p>
-								</header>
-								<a href="https://github.com/ajaytalanki/Simple-Shell" class="image main"><img src="images/code.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/ajaytalanki/Simple-Shell" class="button large">View Project</a></li>
-								</ul>
-							</article>
+								<section class="posts">
 
-						<!-- Posts -->
-							<section class="posts">
+									<style>
+										/* Add padding to the buttons */
+										.button.large  {
+    										margin-bottom: 20px; 
+										}
+									  </style>
+
 								<article>
 									<header>
-										<h2><a href="#">FISC CPU<br /></a></h2>
+									  <h2><a href="https://github.com/ajaytalanki/Simple-Shell">Custom Linux Shell<br /></a></h2>
 									</header>
-									<a href="https://github.com/ajaytalanki/FISC-CPU" class="image fit"><img src="images/cpu.webp" alt="" /></a>
-									<p>A C++ project that mimicks the process of a finite instruction set computer. This CPU contains four 8-bit
-										 registers and can process four instructions: ADD,AND,NOT,BNZ. This project is split into an assembler which transforms
-										assembly code into hex machine code, and a simulator which reads this hex machine code and processes instructions.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ajaytalanki/FISC-CPU" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
+									<a href="https://github.com/ajaytalanki/Simple-Shell" class="image fit"><img src="images/code.jpg" alt="" style="width: 450px; height: 300px;" /></a>
+									<button class="button large" onclick="toggleDescription('description1')">View Description</button>
+									<button class="button large" onclick="toggleDemo('demo1')">View Demo</button>
+									<div id="description1" style="display: none;">
+									  <p>This C program is a command-line interface application that replicates the functionality of a standard Linux shell. 
+										It provides users with a familiar environment for executing Linux commands, performing file operations, and managing processes. 
+										This project showcases principles of operating systems and system programming, and provides a practical tool for users who work in a Unix-like environment.</p>
+									</div>
+									<div id="demo1" style="display: none;">
+										<iframe width="444" height="250" src="demos/sshell_demo.mp4" frameborder="0" allowfullscreen controls data-muteable="true"></iframe>
+									</div>
+								  </article>
+
+								  <article>
 									<header>
-										<h2><a href="#">Spotify Playlist to MP3 Downloader</a></h2>
+										<h2><a href="https://github.com/ajaytalanki/Download-Playlist">Playlist Downloader</a></h2>
 									</header>
-									<a href="https://github.com/ajaytalanki/Download-Playlist" class="image fit"><img src="images/music.jpg" alt="" /></a>
-									<p>A Python program utilizing the tkinter, spotipy, and pytube API's to download all the
-										tracks of a given playlist as MP3 files. DISCLAIMER: Most MP3 files available on this platform are protected by copyright law. 
-										Downloading, sharing, or distributing copyrighted music without proper authorization 
-										may be illegal in your jurisdiction. Make sure you have the necessary rights or permissions before
-										downloading any MP3 files.  </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ajaytalanki/Download-Playlist" class="button">View Project</a></li>
-									</ul>
+									<a href="https://github.com/ajaytalanki/Download-Playlist" class="image fit"><img src="images/music.jpg" alt="" width="300" height="275"/></a>
+									<button class="button large" onclick="toggleDescription('description3')">View Description</button>
+									<button class="button large" onclick="toggleDemo('demo3')">View Demo</button>
+									<div id="description3" style="display: none;">
+										<p>This Python program automates the process of downloading all the tracks from a Spotify playlist as MP3 files. This project leverages the 
+											Spotipy and Pytube APIs to interact with the Spotify and YouTube platforms respectively. The program utilizes threading to maximize download efficiency by concurrently
+											 downloading multiple tracks from the playlist, making it a valuable tool for users who want to enjoy their favorite Spotify playlist offline. </p>
+									  </div>
+									  <div id="demo3" style="display: none;">
+										<iframe width="444" height="250" src="demos/mp3ify_demo.mp4" frameborder="0" allowfullscreen controls data-muteable="true"></iframe>
+									</div>
 								</article>
+
 								<article>
 									<header>
-										<h2><a href="#">Text Editor</a></h2>
+										<h2><a href="https://github.com/ajaytalanki/FISC-CPU">FISC CPU<br /></a></h2>
 									</header>
-									<a href="https://github.com/ajaytalanki/TextEditor" class="image fit"><img src="images/notepad.png" width="25" height="350"/></a>
-									<p>A python application developed using tkinter that recreates the functionality of a simple text editor.
-										The editor allows users to do standard text editor functions like opening and saving files as well as 
-										cutting, copying, and pasting text with bindings. The application also integrates features like finding and replacing text
-										and prompting the user to save the file when the user attempts to quit with unsaved changes.  
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ajaytalanki/TextEditor" class="button">View Project</a></li>
-									</ul>
+									<a href="https://github.com/ajaytalanki/FISC-CPU" class="image fit"><img src="images/cpu.webp" alt="" style="width: 450px; height: 300px;" /></a>
+									<button class="button large" onclick="toggleDescription('description2')">View Description</button>
+									<button class="button large" onclick="toggleDemo('demo2')">View Demo</button>
+									<div id="description2" style="display: none;">
+										<p>The CPU Simulator is a C++ program that showcases the ideas of computer architecture by bridging the gap between human-readable assembly code
+										and machine code, and executing these instructions in a CPU-like manner. The program is valuable for users seeking to understand how the CPU 
+										processes instructions, experiment with custom assembly architectures, or analyze the execution of assembly code.</p>
+									</div>
+									<div id="demo2" style="display: none;">
+										<iframe width="444" height="250" src="demos/FISC.mp4" frameborder="0" allowfullscreen controls data-muteable="true"></iframe>
+									</div>
 								</article>
+
 								<article>
 									<header>
-										<h2><a href="#">Battleship with AI's</a></h2>
+										<h2><a href="https://github.com/ajaytalanki/TextEditor">Text Editor</a></h2>
+									</header>
+									<a href="https://github.com/ajaytalanki/TextEditor" class="image fit"><img src="images/notepad.png" width="150" height="325"/></a>
+									<button class="button large" onclick="toggleDescription('description4')">View Description</button>
+									<button class="button large" onclick="toggleDemo('demo4')">View Demo</button>
+									<div id="description4" style="display: none;">
+										<p>This Python Text Editor is a versatile and user-friendly text editing tool developed using the Tkinter library. 
+											This project combines the simplicity of a standard text editor, with advanced editing capabilities to cater to a wide
+											 range of users including developers, writers, and general users. Its rich feature set, including undo/redo, cut/copy/paste, find, replace, 
+											 and file management, makes it an essential tool for various text-related tasks. 
+										</p>
+									  </div>
+									<div id="demo4" style="display: none;">
+										<iframe width="444" height="250" src="demos/text_editor_demo.mp4" frameborder="0" allowfullscreen control data-muteable="true"></iframe>
+									</div>								
+								</article>
+
+								<article>
+									<header>
+										<h2><a href="https://github.com/ajaytalanki/BattleShip">Battleship with AI's</a></h2>
 									</header>
 									<a href="https://github.com/ajaytalanki/BattleShip" class="image fit"><img src="images/battleship.jpg" alt="" /></a>
-									<p>A game of BattleShip that has three modes: player vs player, player vs AI, or AI vs AI. There are three different AI's 
-										that each have unique special attacks. This project incorporates fundamental Object Oriented Programming concepts such 
-										inheritance and polymorphism, and uses C++ smart pointers to automatically deallocate memory. Lastly, the game incorporates
-										the use of key data structures and developed algorithms for AI attacks. 
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/ajaytalanki/BattleShip" class="button">View Project</a></li>
-									</ul>
+									<button class="button large" onclick="toggleDescription('description5')">View Description</button>
+									<button class="button large" onclick="toggleDemo('demo5')">View Demo</button>
+									<div id="description5" style="display: none;">
+										<p>A game of BattleShip that has three modes: player vs player, player vs AI, or AI vs AI. There are three different AI's 
+											that each have unique special attacks. This project incorporates fundamental Object Oriented Programming concepts such 
+											inheritance and polymorphism, and uses C++ smart pointers to automatically deallocate memory. Lastly, the game incorporates
+											the use of key data structures and custom algorithms for AI attacks. 
+										</p>
+									</div>
+									<div id="demo5" style="display: none;">
+										<iframe width="444" height="250" src="demos/sshell_demo.mp4" frameborder="0" allowfullscreen control data-muteable="true"></iframe>
+									</div>
 								</article>
+
+								<script>
+									function toggleDescription(descriptionId) {
+									  var description = document.getElementById(descriptionId);
+								  
+									  if (description.style.display === 'block') {
+										description.style.display = 'none';
+									  } else {
+										description.style.display = 'block';
+									  }
+									}
+								  
+									function toggleDemo(demoId) {
+									  var demo = document.getElementById(demoId);
+								  
+									  if (demo.style.display === 'block') {
+										demo.style.display = 'none';
+									  } else {
+										demo.style.display = 'block';
+									  }
+									}
+
+									  function muteAllVideos() {
+ 										  // Select all iframe elements with a specific attribute, e.g., data-muteable="true"
+ 										  var muteableIframes = document.querySelectorAll('iframe[data-muteable="true"]');
+
+ 										  muteableIframes.forEach(function (iframe) {
+ 										    var video = iframe.contentWindow.document.querySelector('video');
+ 										    if (video) {
+ 										      video.muted = true;
+ 										    }
+ 										  });
+ 										}
+
+ 										// Run the muteAllVideos function when the page loads
+ 										window.addEventListener('load', muteAllVideos);
+								  </script>
+								  
 							</section>
 					</div>
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Ajay Talanki </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
-
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
