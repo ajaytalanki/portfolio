@@ -63,7 +63,7 @@
 									<header>
 									  <h2><a href="https://github.com/ajaytalanki/Simple-Shell">Custom Linux Shell<br /></a></h2>
 									</header>
-									<a href="https://github.com/ajaytalanki/Simple-Shell" class="image fit"><img src="images/code.jpg" alt="" style="width: 450px; height: 300px;" /></a>
+									<a href="https://github.com/ajaytalanki/Simple-Shell" class="image fit"><img src="images/code.jpg" alt="" width="300" height="275" /></a>
 									<button class="button large" onclick="toggleDescription('description1')">View Description</button>
 									<button class="button large" onclick="toggleDemo('demo1')">View Demo</button>
 									<div id="description1" style="display: none;">
@@ -95,15 +95,32 @@
 
 								<article>
 									<header>
+										<h2><a href="https://github.com/ajaytalanki/SteamScraper">Game Sentiment Analysis</a></h2>
+									</header>
+									<a href="https://github.com/ajaytalanki/SteamScraper" class="image fit"><img src="images/Sentiment-Analysis.webp" alt="" width="300" height="275"/></a>
+									<button class="button large" onclick="toggleDescription('description6')">View Description</button>
+									<button class="button large" onclick="toggleDemo('demo6')">View Demo</button>
+									<div id="description6" style="display: none;">
+										<p> This sentiment analysis project is designed to provide game developers and gamers with a summarized 
+											analysis of Steam game reviews. This python project utilizes the Steamworks API, RoBERTa natural language processing model, 
+											and multithreading to efficiently analyze a sample of reviews for a given Steam app ID. </p>
+									  </div>
+									  <div id="demo6" style="display: none;">
+										<iframe width="444" height="250" src="demos/sentiment_analysis_demo.mp4" frameborder="0" allowfullscreen controls data-muteable="true"></iframe>
+									</div>
+								</article>
+
+								<article>
+									<header>
 										<h2><a href="https://github.com/ajaytalanki/FISC-CPU">FISC CPU<br /></a></h2>
 									</header>
-									<a href="https://github.com/ajaytalanki/FISC-CPU" class="image fit"><img src="images/cpu.webp" alt="" style="width: 450px; height: 300px;" /></a>
+									<a href="https://github.com/ajaytalanki/FISC-CPU" class="image fit"><img src="images/cpu.webp" alt="" width="300" height="275"/></a>
 									<button class="button large" onclick="toggleDescription('description2')">View Description</button>
 									<button class="button large" onclick="toggleDemo('demo2')">View Demo</button>
 									<div id="description2" style="display: none;">
-										<p>The CPU Simulator is a C++ program that showcases the ideas of computer architecture by bridging the gap between human-readable assembly code
-										and machine code, and executing these instructions in a CPU-like manner. The program is valuable for users seeking to understand how the CPU 
-										processes instructions, experiment with custom assembly architectures, or analyze the execution of assembly code.</p>
+										<p>The CPU Simulator showcases the ideas of computer architecture by bridging the gap between assembly code
+										and machine code, and executing these instructions in a CPU-like manner. The program is valuable for users seeking to understand how a CPU 
+										processes instructions, experiment with custom assembly architectures, or analyze assembly code execution.</p>
 									</div>
 									<div id="demo2" style="display: none;">
 										<iframe width="444" height="250" src="demos/FISC.mp4" frameborder="0" allowfullscreen controls data-muteable="true"></iframe>
@@ -114,11 +131,11 @@
 									<header>
 										<h2><a href="https://github.com/ajaytalanki/TextEditor">Text Editor</a></h2>
 									</header>
-									<a href="https://github.com/ajaytalanki/TextEditor" class="image fit"><img src="images/notepad.png" width="150" height="325"/></a>
+									<a href="https://github.com/ajaytalanki/TextEditor" class="image fit"><img src="images/notepad.png" width="300" height="275"/></a>
 									<button class="button large" onclick="toggleDescription('description4')">View Description</button>
 									<button class="button large" onclick="toggleDemo('demo4')">View Demo</button>
 									<div id="description4" style="display: none;">
-										<p>This Python Text Editor is a versatile and user-friendly text editing tool developed using the Tkinter library. 
+										<p>This Text Editor is a versatile and user-friendly text editing tool developed using Python's Tkinter library. 
 											This project combines the simplicity of a standard text editor, with advanced editing capabilities to cater to a wide
 											 range of users including developers, writers, and general users. Its rich feature set, including undo/redo, cut/copy/paste, find, replace, 
 											 and file management, makes it an essential tool for various text-related tasks. 
@@ -133,14 +150,14 @@
 									<header>
 										<h2><a href="https://github.com/ajaytalanki/BattleShip">Battleship with AI's</a></h2>
 									</header>
-									<a href="https://github.com/ajaytalanki/BattleShip" class="image fit"><img src="images/battleship.jpg" alt="" /></a>
+									<a href="https://github.com/ajaytalanki/BattleShip" class="image fit"><img src="images/battleship.jpg" alt="" width="300" height="275"/></a>
 									<button class="button large" onclick="toggleDescription('description5')">View Description</button>
 									<button class="button large" onclick="toggleDemo('demo5')">View Demo</button>
 									<div id="description5" style="display: none;">
-										<p>A game of BattleShip that has three modes: player vs player, player vs AI, or AI vs AI. There are three different AI's 
+										<p> A C++ BattleShip game that has three modes: player vs player, player vs AI, or AI vs AI. There are three different AI's 
 											that each have unique special attacks. This project incorporates fundamental Object Oriented Programming concepts such 
-											inheritance and polymorphism, and uses C++ smart pointers to automatically deallocate memory. Lastly, the game incorporates
-											the use of key data structures and custom algorithms for AI attacks. 
+											inheritance and polymorphism, and uses C++ smart pointers to automatically deallocate memory. The game also incorporates
+											key data structures and custom algorithms for special AI attacks. 
 										</p>
 									</div>
 									<div id="demo5" style="display: none;">
@@ -170,7 +187,6 @@
 									}
 
 									  function muteAllVideos() {
- 										  // Select all iframe elements with a specific attribute, e.g., data-muteable="true"
  										  var muteableIframes = document.querySelectorAll('iframe[data-muteable="true"]');
 
  										  muteableIframes.forEach(function (iframe) {
@@ -181,7 +197,6 @@
  										  });
  										}
 
- 										// Run the muteAllVideos function when the page loads
  										window.addEventListener('load', muteAllVideos);
 								  </script>
 								  
